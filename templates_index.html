@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Planilha de Estatísticas</title>
+</head>
+<body>
+    <h1>Gerar Planilha de Estatísticas de Jogo</h1>
+    <form action="/process" method="post">
+        <label for="url">URL da API:</label><br>
+        <input type="text" id="url" name="url" required><br><br>
+
+        <label for="home_team">Nome do Time Mandante:</label><br>
+        <input type="text" id="home_team" name="home_team" required><br><br>
+
+        <label for="away_team">Nome do Time Visitante:</label><br>
+        <input type="text" id="away_team" name="away_team" required><br><br>
+
+        <label for="file_name">Nome do Arquivo Excel:</label><br>
+        <input type="text" id="file_name" name="file_name" required><br><br>
+
+        <button type="submit">Gerar Planilha</button>
+    </form>
+</body>
+</html>
